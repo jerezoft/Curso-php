@@ -1,20 +1,15 @@
 <?php 
-class Persona{
-    public $nombre = "carlos";
+class Pagina{
+    public $nombre = "Codigo Facilito";
+    public static $url="www.Codigo.facilito";
 
-    public  function Saludar($nombre){
-        $this->nombre = $nombre;
-        echo "Hola ".$this->nombre;
-    }
 
+    //Metodos
+public function bienvenida(){
+    echo "bienvenidos a ".$this->nombre." url ".$this->url."<br>";
+}
 }
 
-class Persononita extends Persona{
-    public function __construct(){
-            Persona::Saludar("juan");
-    }
-    
-}
-
-$a = new Persononita();
+$pa = new Pagina();
+$pa->bienvenida();
 ?>
