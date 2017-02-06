@@ -13,3 +13,4 @@ public function bienvenida(){
 $pa = new Pagina();
 $pa->bienvenida();
 ?>
+Hola mundo
